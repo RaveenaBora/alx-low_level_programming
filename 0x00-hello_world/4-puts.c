@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main -print exact statement using put functio
- * 
- * Return : 0
-*/
+ * main  - Main function
+ *
+ * Return: 0
+ */
 
 int main(void)
 {
