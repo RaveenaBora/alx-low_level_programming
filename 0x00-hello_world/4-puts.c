@@ -2,7 +2,7 @@
 /*
  * main -print exact statement using put function
  * return :alway 0
- * */
+ */
 int main(void)
 /*declaration of function*/
 {
