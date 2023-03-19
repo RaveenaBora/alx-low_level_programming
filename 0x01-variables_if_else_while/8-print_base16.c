@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main function - main function
+ *main - print numbers of base 16
  *
- * return: always 0
+ *Return: 0 (success)
  */
 
 int main(void)
