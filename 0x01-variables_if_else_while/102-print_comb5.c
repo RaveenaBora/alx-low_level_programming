@@ -1,38 +1,33 @@
 #include <stdio.h>
 /**
-  *main - entry point
-  *Description: "print combination of numbers"
-  *Return: always 0
-  *
-  *Declare variable n that will act as  counter
-  *Write a for loop to loop through 0-9
-  *print the numbers
-  *Write an if statement
-  *print new line
-  */
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int n, b, c, d;
+  int i, j;
 
-	for (n = '0'; n <= '9'; n++)
-		for (b = '0'; b <= '9'; b++)
-			for (c = '0'; c <= '9'; c++)
-				for (d = '0'; d <= '9'; d++)
-				{
-					putchar(n);
-					putchar(b);
-					putchar(' ');
-					putchar(c);
-					putchar(d);
-					if (!(n == '8' && b == '9'))
-					{
-					putchar(',');
-					putchar(' ');
-					}
-				}
-	putchar('\n');
-	return (0);
+  for (i = 0; i < 100; i++)
+  {
+    for (j = 0; j < 100; j++)
+    {
+      if (i < j)
+	    {
+		  putchar((i / 10) + 48);
+		  putchar((i % 10) + 48);
+		  putchar(' ');
+		  putchar((j / 10) + 48);
+		  putchar((j % 10) + 48);
+		  if (i != 98 || j != 99)
+		  {
+			putchar(',');
+			putchar(' ');
+		  }
+	   }
+    }
+  }
+  putchar('\n');
+
+  return (0);
 }
-
-
-
